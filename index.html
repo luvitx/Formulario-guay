@@ -18,7 +18,7 @@
                     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                         
                         <input type=hidden name="oid" value="00D8b0000032DDL">
-                        <input type=hidden name="retURL" value="http://www.google.com">
+                        <input type=hidden name="retURL" value="https://winguweb.org/">
                         <div class="form_group"> 
                             <label for="salutation">Saludo</label><select  id="salutation" class="form_input"name="salutation"><option value="">--Ninguno--</option><option value="Mr.">Mr.</option>
                             <option value="Ms.">Ms.</option>
@@ -61,9 +61,9 @@
                             <label for="emailOptOut">No recibir correos electrónicos</label><input  id="emailOptOut"  class="form_checkinput" name="emailOptOut" type="checkbox" value="1" /><br>
                             </div>
                         
-                            Nombre de contacto: <input  id="00N8b00000I2L8u" class="form_input"  maxlength="18" name="00N8b00000I2L8u" size="40" type="text" /><br>
+                            Nombre de contacto: <input  id="00N8b00000I2L8u" class="form_input"  maxlength="18" name="00N8b00000I2L8u" size="40" type="text" required /><br>
                    
-                            Telefono de contacto:<input  id="00N8b00000I2LAH"class="form_input"  maxlength="40" name="00N8b00000I2LAH" size="20" type="number" /><br>
+                            Telefono de contacto:<input  id="00N8b00000I2LAH"class="form_input"  maxlength="40" name="00N8b00000I2LAH" size="20" type="number" required /><br>
                        
                             Tipo de donación:<select  id="00N8b00000I2J1S" class="form_input" name="00N8b00000I2J1S" title="Tipo de donación"><option value="">
                             --Ninguno--</option>
@@ -73,14 +73,14 @@
                             <option value="Otros">Otros</option>
                             <option value="Ropa">Ropa</option>
                             <option value="Tiempo">Tiempo</option>
+                            <option value="Juguetes">Juguetes</option>
                             </select><br>
-                        
-                        
-                            Tipo de operación:</class><select  id="00N8b00000I2PTN"  class="form_input" name="00N8b00000I2PTN" title="Tipo de operación"><option value="">--Ninguno--</option><option value="Automáticamente">Automáticamente</option>
-                            <option value="Manualmente">Manualmente</option>
-                            </select><br>
-                        
-                       
+                            
+                            Tipo de operación:<select  id="00N8b00000I2PTN" class="form_input"  name="00N8b00000I2PTN" title="Tipo de operación">
+                                <option value="">--Ninguno--</option><option value="Automaticamente">Automaticamente</option>
+                                <option value="Manualmente">Manualmente</option>
+                                </select><br>
+                                              
                             Comentarios:<textarea  id="00N8b00000I2L9J" class="form_input" placeholder=" " name="00N8b00000I2L9J" type="text" placeholder=" Alguna informacion Adicional" wrap="soft"></textarea><br>
                             <input type="submit" class="form_submit" name="submit">
                         </div>
